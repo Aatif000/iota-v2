@@ -10,7 +10,7 @@ class Chatbot:
         self.model = model
         self.system_prompt = system_prompt
 
-    def user_message(self, user_input):
+    def send_message(self, user_input):
 
         system_activity = {
             "answer": None,

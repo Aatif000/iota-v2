@@ -13,7 +13,7 @@ while True:
     try:
         if user_input.lower() == "quit":
             break
-        response = assistant.user_message(user_input)
+        response = assistant.send_message(user_input)
         print(response["answer"])
         print(f"Input token count: {response['input_token_count']}")
         print(f"Output token count: {response['output_token_count']}")
